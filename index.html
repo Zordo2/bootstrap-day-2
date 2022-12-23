@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Tarek Zordok</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark d-flex justify-content-between">
+        <div class="container">
+          <a class="navbar-brand" href="#">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Users</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+        <div class="drob text-white d-flex list-unstyled justify-content-center align-items-center">
+            <i class="fa-solid fa-user"></i>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome Brad
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-user-xmark"></i>
+                <a class="nav-link text-white" href="#">Logout</a>
+              </li>
+          </div>
+      </nav>     
+      <section id="dashBoard" class="bg-primary p-4 text-white">
+        <div class="container">
+            <div class="dashboardContent d-flex">
+                <i class="fa-sharp fa-solid fa-gear p-3 fs-3"></i>
+                <h1 class="fw-bold">Dasboard</h1>
+            </div> 
+        </div>
+      </section>
+      <section id="buttons">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="addPost.html" class="btn btn-primary btn-lg w-100"> 
+                            <i class="fa-solid fa-plus"></i>                       
+                            Add Post</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <button class="btn btn-success btn-lg w-100"data-bs-toggle="modal" data-bs-target="#formModal"> 
+                            <i class="fa-solid fa-plus"></i>                       
+                            Add Category</button>
+                    </div>
+                </div> <div class="col-md-4">
+                    <div class="item ">
+                        <button class="btn btn-warning btn-lg w-100"> 
+                            <i class="fa-solid fa-plus"></i>                       
+                            Add User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" data-bs-backdrop="static" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
+                  <div>
+                    <label for="title">Title</label>
+                      <input id="title" class="form-control">
+                  </div>
+               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="table">
+        <div class="container">
+          <table class="table table-striped">
+            <thead>
+              <th colspan="5" class="gray">Latest Posts</th>
+
+            </thead>
+            <thead class="bg-dark">
+              <th>#</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Post One</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr><tr>
+                <td>2</td>
+                <td>Post Two</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr><tr>
+                <td>3</td>
+                <td>Post Three</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr><tr>
+                <td>4</td>
+                <td>Post Four</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr><tr>
+                <td>5</td>
+                <td>Post Five</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr><tr>
+                <td>6</td>
+                <td>Post Six</td>
+                <td>Web Development</td>
+                <td>May 10 2018</td>
+                <td><button class="btn btn-secondary">Details</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <footer id="footer" class="p-5 bg-secondary mt-3 text-center">
+        <h4 class="fw-bold text-white">        Copyright &copy; 2022 Blogen
+        </h4>
+      </footer>
+      <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
